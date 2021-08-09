@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class PracticalExp extends Component {
     constructor(props){
         super(props);
-        this.state.counter = 3;
+        this.state.counter = 1;
     }
     state = {};
     increaseConter = ()=>{
@@ -32,7 +32,7 @@ class PracticalExp extends Component {
         
         let requiredForms = [];
 
-        for (let i = 0; i <= this.state.counter; i++) {
+        for (let i = 1; i <= this.state.counter; i++) {
             requiredForms.push(                         
             <Form>
             <Form.Group as={Row} controlId="formHorizontalEmail">

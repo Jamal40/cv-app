@@ -14,11 +14,12 @@ class App extends Component {
     this.state.studyTitle = "Study field";
     this.state.studyDateFrom = "1995-12-17";
     this.state.studyDateTo = "1995-12-17";
-    this.state.companyName = "company name";
-    this.state.positionTitle = "position title";
-    this.state.mainTasks = "main tasks";
-    this.state.workDateFrom = "1995-12-17";
-    this.state.workDateTo = "1995-12-17";
+
+    this.state.companyNames = [];
+    this.state.positionTitles = [];
+    this.state.mainTasksSet = [];
+    this.state.workDateFromSet = [];
+    this.state.workDateToSet = [];
   }
   state = {};
 
@@ -30,13 +31,6 @@ class App extends Component {
 
   handleValues = () => {
 
-    let companiesLength = document.querySelectorAll("companyName").length;
-
-    
-    for(let i =0; i <companiesLength; i++ ){
-
-    }
-
     this.setState({
       show: false,
       firstName: document.getElementsByClassName("firstName")[0].value,
@@ -47,15 +41,19 @@ class App extends Component {
       studyTitle: document.getElementsByClassName("studyTitle")[0].value,
       studyDateFrom: document.getElementsByClassName("studyDateFrom")[0].value,
       studyDateTo: document.getElementsByClassName("studyDateTo")[0].value,
-      companyName: document.getElementsByClassName("companyName")[0].value,
-      positionTitle: document.getElementsByClassName("positionTitle")[0].value,
-      mainTasks: document.getElementsByClassName("mainTasks")[0].value,
-      workDateFrom: document.getElementsByClassName("workDateFrom")[0].value,
-      workDateTo: document.getElementsByClassName("workDateTo")[0].value,
+      companyNames: Array.from(document.getElementsByClassName("companyName")).map(e=>e.value),
+      positionTitles: Array.from(document.getElementsByClassName("positionTitle")).map(e=>e.value),
+      mainTasksSet: Array.from(document.getElementsByClassName("mainTasks")).map(e=>e.value),
+      workDateFromSet: Array.from(document.getElementsByClassName("workDateFrom")).map(e=>e.value),
+      workDateToSet :  Array.from(document.getElementsByClassName("workDateTo")).map(e=>e.value) ,
     });
+    
   };
 
   render() {
+
+    console.log(this.state);
+
     if (this.state.show === true) {
       return <CVform assignValues={this.handleValues} />;
     } else {
@@ -70,11 +68,11 @@ class App extends Component {
           studyTitle={this.state.studyTitle}
           studyDateFrom={this.state.studyDateFrom}
           studyDateTo={this.state.studyDateTo}
-          companyName={this.state.companyName}
-          positionTitle={this.state.positionTitle}
-          mainTasks={this.state.mainTasks}
-          workDateFrom={this.state.workDateFrom}
-          workDateTo={this.state.workDateTo}
+          companyNames={this.state.companyNames}
+          positionTitles={this.state.positionTitles}
+          mainTasksSet={this.state.mainTasksSet}
+          workDateFromSet={this.state.workDateFromSet}
+          workDateToSet={this.state.workDateToSet}
         />
       );
     }

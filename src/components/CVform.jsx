@@ -116,63 +116,6 @@ class CVform extends Component {
           </Form>
         </section>
 
-        <section className="section">
-          <h2 className="h2">Practical Experience</h2>
-          <Form>
-            <Form.Group as={Row} controlId="formHorizontalEmail">
-              <Form.Label className="col-sm-2 col-form-label">
-                Company Name:
-              </Form.Label>
-              <Col sm="3">
-                <Form.Control
-                  className="companyName"
-                  type="text"
-                  placeholder="Company Name"
-                />
-              </Col>
-            </Form.Group>
-
-            <Form.Group as={Row} controlId="formHorizontalEmail">
-              <Form.Label className="col-sm-2 col-form-label">
-                Position Title:
-              </Form.Label>
-              <Col sm="3">
-                <Form.Control
-                  className="positionTitle"
-                  type="text"
-                  placeholder="Specialization"
-                />
-              </Col>
-            </Form.Group>
-
-            <Form.Group as={Row} controlId="formHorizontalEmail">
-              <Form.Label className="col-sm-2 col-form-label">
-                Main Tasks:
-              </Form.Label>
-              <Col sm="4">
-                <Form.Control
-                  className="mainTasks"
-                  as="textarea"
-                  rows="3"
-                  placeholder="Main Tasks"
-                />
-              </Col>
-            </Form.Group>
-
-            <Form.Row>
-              <Form.Label className="col-sm-2 col-form-label">From:</Form.Label>
-              <Col sm="4">
-                <Form.Control className="workDateFrom" type="date" />
-              </Col>
-
-              <Form.Label className="col-sm-2 col-form-label">To:</Form.Label>
-              <Col sm="4">
-                <Form.Control className="workDateTo" type="date" />
-              </Col>
-            </Form.Row>
-          </Form>
-        </section>
-  
         <PracticalExp/>
 
         <Button

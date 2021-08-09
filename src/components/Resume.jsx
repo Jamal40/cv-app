@@ -9,6 +9,32 @@ class Resume extends Component {
   state = {};
 
   render() {
+
+    let practicalExpSection = [];
+
+    for(let i = 0; i < this.props.companyNames.length; i++){
+      practicalExpSection.push(
+        <div key={this.props.companyNames[i]} className="practical">
+        <h2>Practical Experience</h2>
+        <h3 className="item">
+          Company Name: <span>{this.props.companyNames[i]}</span>
+        </h3>
+        <h3 className="item">
+          Position Title: <span>{this.props.positionTitles[i]}</span>
+        </h3>
+        <h3 className="item">
+          Duties: <span className="" >{this.props.mainTasksSet[i]}</span>
+        </h3>
+        <h3>
+          Starting Date: <span>{this.props.workDateFromSet[i]}</span>
+        </h3>
+        <h3>
+          Finishing Date: <span>{this.props.workDateToSet[i]}</span>
+        </h3>
+      </div>
+      )
+    }
+
     return (
       <div className="container-">
         <div className="header">
@@ -40,25 +66,10 @@ class Resume extends Component {
             <h3>
               Finishing Date: <span>{this.props.studyDateTo}</span>
             </h3>
-          </div>
-          <div className="practical">
-            <h2>Practical Experience</h2>
-            <h3 className="item">
-              Company Name: <span>{this.props.companyName}</span>
-            </h3>
-            <h3 className="item">
-              Position Title: <span>{this.props.positionTitle}</span>
-            </h3>
-            <h3 className="item">
-              Duties: <span className="" >{this.props.mainTasks}</span>
-            </h3>
-            <h3>
-              Starting Date: <span>{this.props.workDateFrom}</span>
-            </h3>
-            <h3>
-              Finishing Date: <span>{this.props.workDateTo}</span>
-            </h3>
-          </div>
+          </div>    
+       
+          {practicalExpSection}
+
         </div>
         <div className="modification">
           <p>You didn't like it and want to do some modifications?</p>
