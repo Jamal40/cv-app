@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container- {
+  height: 100%;
+}
+.header {
+  display: block;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  background-color: #eed7c5;
+  width: 950px;
+}
+.main {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+  border-width: 2px;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+}
+.name {
+}
+.title {
+}
+.info-container {
+  margin-left: 1em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+}
+.content {
+  display: block;
+  margin: auto;
+  width: 950px;
+  background-color: #eee2df;
+  color: #c97c5d;
+  padding-bottom: 0.5em;
+}
+.content span {
+  margin-left: 0.5em;
+  font-family: "Sansita Swashed", cursive;
+}
+.content h2 {
+  padding: 0.5em;
+  text-align: center;
+  color: #b36a5e;
+}
+.content h3 {
+  padding: 0.5em;
+}
+.modification {
+  padding-top: 1em;
+  display: block;
+  margin: auto;
+  width: 950px;
+  background-color: #d8cdcb;
+  padding-bottom: 1em;
+}
+.modification p {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-left: 0.8em;
+}
+.take-me-back {
+  display: block;
+  margin: auto;
+}
+.small {
+  font-size: 0.5rem;
+}

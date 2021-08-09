@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  padding-bottom: 1em;
+}
+.html-c {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  padding-bottom: 2em;
+}
+section {
+  padding: 1em;
+  margin: 1.5em;
+  margin-top: 3.5em;
+  border: 1px solid;
+  box-shadow: 12px 12px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #f6bdd1;
+  color: #8b575c;
+}
+.h2 {
+  text-align: center;
+  padding-bottom: 0.7em;
+}
+#hihow {
+  display: block;
+  margin: auto;
+}
+.h1 {
+  text-align: center;
+}
