@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PracticalExp from './ParcticalExp.jsx';
 import "../CVform.css";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
@@ -171,6 +172,9 @@ class CVform extends Component {
             </Form.Row>
           </Form>
         </section>
+  
+        <PracticalExp/>
+
         <Button
           onClick={this.props.assignValues}
           size="lg"

@@ -29,6 +29,14 @@ class App extends Component {
   };
 
   handleValues = () => {
+
+    let companiesLength = document.querySelectorAll("companyName").length;
+
+    
+    for(let i =0; i <companiesLength; i++ ){
+
+    }
+
     this.setState({
       show: false,
       firstName: document.getElementsByClassName("firstName")[0].value,

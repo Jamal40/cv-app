@@ -36,3 +36,8 @@ section {
 .h1 {
   text-align: center;
 }
+
+.additional-buttons-container{
+  display: flex;
+  gap: 10px;
+}
